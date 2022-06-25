@@ -149,13 +149,12 @@
    margin-left: auto;
    margin-right: auto;
    outline: 4px solid red; 
-   /* background: rgba(); */
-   background-image:  
-   url(../images/hero.jpg);
+   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+         url("../images/hero.jpg") center/cover;
    background-size: cover;
    background-position: center;
 }  
-/* linear-gradient(to right, rgba(47, 48, 58, 0.4)), */
+
 /* Button */
 .button {
    border-radius: 4px;
