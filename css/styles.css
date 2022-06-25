@@ -187,6 +187,35 @@ padding-bottom: 47px;
    display: flex;
    align-items: center;
 }
+.icon {
+  
+}
+.antenna-icon {
+   display: block;
+   width: 270px;
+   height: 120px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 30px;
+   padding: 25px 102px;
+   background-image: url(../images/icons.svg);
+   border: none;
+   
+   background-position: center;
+   background: #F5F4FA;
+}
+.clock-icon {
+   display: block;
+   width: 270px;
+   height: 120px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 30px;
+   background-image: url(../images/icons.svg);
+   border: none;
+   background-position: center;
+   background: #F5F4FA;
+}
 .benefits .item {
    width: 270px;
 }
@@ -208,6 +237,7 @@ padding-bottom: 47px;
    font-size: 14px;
    line-height: 1.71;
 }
+
 
 /* Section Work, Our team*/
 .work {
