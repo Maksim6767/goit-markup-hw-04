@@ -113,15 +113,38 @@
    
 .auth .link {
    display: block;
+   margin-left: auto;
    padding-top: 32px;
    padding-bottom: 32px;
    color: var(--primery-text-color);
 }
+.auth .item +.item {
+   margin: 50px;
+}
 
+/* Icons Header */
+.icon-header {
+   display: block;
+   padding: 0;
+   padding-right: 10px;
+   margin-left: 30px;
+   border: none;
+   background-color: transparent; 
+}
+.envelope-icon {
+   width: 16px;
+   height: 12px;
+ 
+}
+.phone-icon {
+      width: 10px;
+      height: 16px;
+}
+.envelope-icon:hover,
+.phone-icon:hover {
+stroke: var(--button-bg-color);
+}
 
-.auth .item + .item {
-   margin-left: 50px;
-   }
 /* Hero */
 .hero {
    margin-bottom: 0;
@@ -134,7 +157,6 @@
 .hero-title {
    margin-top: 0;
    margin-bottom: 30px;
-
    color: var(--accent-text-color);
    font-weight: 900;
    font-size: 44px;
@@ -199,23 +221,29 @@ padding-bottom: 47px;
    background-position: center;
    border: none;
    border-radius: 4px;
-   background: #F5F4FA;
+   background-color: #F5F4FA;  
+   background-size: contain;
 }
 .antenna-icon {
    width: 65px;
    height: 70px; 
 }
 .clock-icon {
+   display: inline-block;
    width: 67px;
-   height: 70px;
+   min-height: 70px;
+
 }
 .diagram-icon {
+   display: inline-block;
    width: 70px;
    height: 54px;
 }
 .astronaut-icon {
+   display: inline-block;
    width: 55px;
    height: 60px;
+   background-color: transparent;
 }
 
 .benefits .item {
@@ -281,7 +309,7 @@ padding-bottom: 47px;
 }
 .block-team {
    padding-top: 30px;
-   padding-bottom: 30px;
+   padding-bottom: 0px;
 }
 .photo-title {
    margin-top: 0;
@@ -298,6 +326,33 @@ padding-bottom: 47px;
    font-size: 16px;
    line-height: 19px;
    text-align: center;
+}
+/* Social icons */
+.social-icon {
+  display: flex;
+  width: 270px;
+  padding: 16px 32px 30px;
+  justify-content: space-between;
+  border: transparent;
+  background-color: transparent;
+  background-size: cover;
+}
+.instagram-icon,
+.twitter-icon,
+.facebook-icon,
+.linkedin-icon
+ {
+   width: 22px;
+   height: 22px; 
+   margin: 10px;
+}
+.instagram-icon:hover,
+.twitter-icon:hover,
+.facebook-icon:hover,
+.linkedin-icon:hover {
+   border-radius: 50%;
+   background-color: var(--button-bg-color);
+   fill: var(--accent-text-color);
 }
 /* Footer */
 .adress {
