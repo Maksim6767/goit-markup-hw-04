@@ -27,7 +27,7 @@
    --main-bg-color: #e5e5e5;
 }
 .container {
-   width: 1200px;
+   max-width: 1200px;
    padding-left: 15px;
    padding-right: 15px;
    margin: 0 auto;
@@ -187,35 +187,37 @@ padding-bottom: 47px;
    display: flex;
    align-items: center;
 }
+/* Icons Benefits */
 .icon {
-  
+   display: block;
+   width: 270px;
+   height: 120px;
+   padding: 0;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 30px;
+   background-position: center;
+   border: none;
+   border-radius: 4px;
+   background: #F5F4FA;
 }
 .antenna-icon {
-   display: block;
-   width: 270px;
-   height: 120px;
-   margin-left: auto;
-   margin-right: auto;
-   margin-bottom: 30px;
-   padding: 25px 102px;
-   background-image: url(../images/icons.svg);
-   border: none;
-   
-   background-position: center;
-   background: #F5F4FA;
+   width: 65px;
+   height: 70px; 
 }
 .clock-icon {
-   display: block;
-   width: 270px;
-   height: 120px;
-   margin-left: auto;
-   margin-right: auto;
-   margin-bottom: 30px;
-   background-image: url(../images/icons.svg);
-   border: none;
-   background-position: center;
-   background: #F5F4FA;
+   width: 67px;
+   height: 70px;
 }
+.diagram-icon {
+   width: 70px;
+   height: 54px;
+}
+.astronaut-icon {
+   width: 55px;
+   height: 60px;
+}
+
 .benefits .item {
    width: 270px;
 }
