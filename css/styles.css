@@ -131,15 +131,6 @@
    border: none;
    background-color: transparent; 
 }
-.envelope-icon {
-   width: 16px;
-   height: 12px;
- 
-}
-.phone-icon {
-      width: 10px;
-      height: 16px;
-}
 .envelope-icon:hover,
 .phone-icon:hover {
 stroke: var(--button-bg-color);
@@ -203,11 +194,12 @@ stroke: var(--button-bg-color);
    padding-bottom: 94px;
 }
 .all-benefits {
-padding-bottom: 47px;
+   padding-bottom: 47px;
 }
 .benefits {
    display: flex;
    align-items: center;
+
 }
 /* Icons Benefits */
 .icon {
@@ -223,27 +215,6 @@ padding-bottom: 47px;
    border-radius: 4px;
    background-color: #F5F4FA;  
    background-size: contain;
-}
-.antenna-icon {
-   width: 65px;
-   height: 70px; 
-}
-.clock-icon {
-   display: inline-block;
-   width: 67px;
-   min-height: 70px;
-
-}
-.diagram-icon {
-   display: inline-block;
-   width: 70px;
-   height: 54px;
-}
-.astronaut-icon {
-   display: inline-block;
-   width: 55px;
-   height: 60px;
-   background-color: transparent;
 }
 
 .benefits .item {
@@ -295,7 +266,7 @@ padding-bottom: 47px;
 }
 
 .team {
-   background-color:var(--team-bg-color);
+   background-color: var(--team-bg-color);
    padding-top: 47px;
 }
 .team-photo {
@@ -331,20 +302,16 @@ padding-bottom: 47px;
 .social-icon {
   display: flex;
   width: 270px;
-  padding: 16px 32px 30px;
-  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 30px;
+  align-items: center;
+  justify-content: space-evenly;
   border: transparent;
   background-color: transparent;
   background-size: cover;
 }
-.instagram-icon,
-.twitter-icon,
-.facebook-icon,
-.linkedin-icon
- {
-   width: 22px;
-   height: 22px; 
-   margin: 10px;
+.social-icon +.social-icon{
+   margin-left: 10px;
 }
 .instagram-icon:hover,
 .twitter-icon:hover,
@@ -354,8 +321,40 @@ padding-bottom: 47px;
    background-color: var(--button-bg-color);
    fill: var(--accent-text-color);
 }
+/* Clients */
+.clients {
+   padding: 94px 0;
+}
+.clients-icon {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.clients-title {
+   margin-top: 0;
+   margin-bottom: 50px;
+   color: var(--title-text-color);
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.17;
+   text-align: center;
+}
+.client-icon {
+   display: inline-block;
+   padding: 0;
+   width: 170px;
+   height: 92px;
+   border: 1px solid #AFB1B8;
+   vertical-align: center;
+}
+.client-icon + .client-icon {
+   margin-left: 30px;
+}
+
 /* Footer */
 .adress {
+   /* display: flex; */
+   /* flex-wrap: wrap; */
    padding-top: 60px;
    padding-bottom: 60px;
    background-color: var(--secondary-bg-color);  
@@ -396,6 +395,38 @@ padding-bottom: 47px;
 .adress-link:focus {
    color: var(--button-bg-color);
 }
+/* Icons Footer */
+.footer {
+   display: flex;
+}
+.footer-contacts {
+   margin-right: 70px;
+}
+.footer-icon {
+   margin-top: 12px;
+   color: var(--primery-bg-color);
+   border-radius: 50%;
+}
+.footer-icon: hover {
+   color: var(--primery-bg-color);
+   background-color:var(--button-bg-color);
+}
+.icon-title {
+   margin-top: 10px;
+   margin-bottom: 20px;
+   color: var(--primery-bg-color);
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+}
+.footer-icon + .footer-icon {
+   margin-left: 10px;
+}
+.instagram-icon {
+   background-position: contain;
+}
 
 /* Portfolio */
 /* Buttons */
@@ -413,7 +444,6 @@ padding-bottom: 47px;
 }
 .btn .color {
    margin-top: 0;
-
    display: inline-block;
    border-radius: 4px;
    min-width: 73px;
