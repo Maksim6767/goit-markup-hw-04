@@ -25,6 +25,7 @@
    --secondary-bg-color:#2f303a;
    --button-bg-color: #2196f3;
    --main-bg-color: #e5e5e5;
+   --social-icon-color: #AFB1B8;
 }
 .container {
    max-width: 1200px;
@@ -316,17 +317,21 @@
    padding: 0;
    background-color: transparent;
    border: transparent;
+   color: #2196f3;
 }
 
 .social-icon + .social-icon {
    margin-left: 10px;
 }
+.instagram-icon {
+   fill: var(--social-icon-color);
+}
+
 .instagram-icon:hover,
 .twitter-icon:hover,
 .facebook-icon:hover,
 .linkedin-icon:hover { 
    fill: var(--button-bg-color);
-   color: #ffffff;
 }
 
 /* Clients */
