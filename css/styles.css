@@ -135,6 +135,7 @@
 .envelope-icon:hover,
 .phone-icon:hover {
    stroke: var(--button-bg-color);
+   stroke-width: 5px;
 }
 
 
@@ -311,27 +312,30 @@
    padding-top: 16px;
    padding-bottom: 30px;
    justify-content: space-evenly;
-   border: transparent;
+   border: none;
 }
 .social-icon {
    padding: 0;
+   border: none;
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
    background-color: transparent;
-   border: transparent;
-   color: #2196f3;
 }
-
 .social-icon + .social-icon {
    margin-left: 10px;
 }
-.instagram-icon {
-   fill: var(--social-icon-color);
+.social-icon:hover {
+   background-color: var(--button-bg-color);
 }
-
+.social-icon .instagram-icon:hover {
+   fill: var(--primery-bg-color);
+}
 .instagram-icon:hover,
 .twitter-icon:hover,
 .facebook-icon:hover,
 .linkedin-icon:hover { 
-   fill: var(--button-bg-color);
+   /* fill: currentColor; */
 }
 
 /* Clients */
@@ -414,7 +418,13 @@
    margin-right: 70px;
 }
 .footer-icon {
+   margin-left: -10px;
+}
+.footer-icon {
+   width: 44px;
+   height: 44px;
    padding: 0;
+   border-radius: 50%;
    background-color: var(--secondary-bg-color);
    border: transparent;
 }
@@ -435,13 +445,16 @@
 .twitter-icon,
 .facebook-icon,
 .linkedin-icon {  
-   fill: rgba(255, 255, 255, 0.1);
+   fill: var(--primery-bg-color);
+}
+.footer-icon:hover {
+   background-color: var(--button-bg-color);
 }
 .instagram-icon:hover,
 .twitter-icon:hover,
 .facebook-icon:hover,
 .linkedin-icon:hover {
-   fill: var(--button-bg-color);
+   /* fill: var(--button-bg-color); */
 }
 
 /* Portfolio */
