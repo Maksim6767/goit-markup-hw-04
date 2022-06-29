@@ -130,14 +130,15 @@
    padding-right: 10px;
    margin-left: 30px;
    border: none;
+   justify-content: center;
    background-color: transparent; 
 }
+
 .envelope-icon:hover,
 .phone-icon:hover {
    stroke: var(--button-bg-color);
    stroke-width: 5px;
 }
-
 
 /* Hero */
 .hero {
