@@ -9,8 +9,8 @@
    box-sizing: border-box;
  }
  *,
- *::before,
- *::after {
+ *::after, 
+ *::before {
    box-sizing: inherit;
  }
 
@@ -38,15 +38,38 @@
    color: var(--primery-text-color);
    font-family: Roboto, sans-serif;
    letter-spacing: 0.03em;
- }   
+ }  
+ /* Класс для обнуления базовых свойств у списков (ul) */
  .list {
-   padding: 0;
+   padding-left: 0;
    margin: 0;
    list-style: none;
  }
+ /* Класс для обнуления базовых свойств у ссылок */
+ .link {
+    text-decoration: none;
+    color: inherit;
+ }
+/* Свойства для корректного отображения картинок */
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
  a {
    text-decoration: none;
  }
+/* Стили для обнуления верхних отступов у элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+   margin-top: 0;
+}
+
  .main {
    display: flex;
    align-items: center;
