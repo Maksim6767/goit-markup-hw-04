@@ -351,20 +351,19 @@ p {
    width: 100%;
    height: 100%;
    border-radius: 50%;
-   color: var(--social-icon-color);
 }
 .item-decor .social-icon {
    fill: var(--social-icon-color);
 }
-.item-decor .social-icon:hover {
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
    fill: var(--primery-bg-color);
 }
-
 .social-link:hover,
 .social-link:focus {
    background-color: var(--button-bg-color);
-   color: var(--primery-bg-color);
 }
+
 
 /* Clients */
 .clients-list {
