@@ -121,7 +121,7 @@ p {
 }
 
  /* Site auth */
-  .auth {
+.auth {
    display: flex;
    margin-left: auto;
    font-weight: 500;
@@ -147,14 +147,15 @@ p {
 
 /* Icons Header */
 .contact-icon {
-   margin-right: 10px;
+   margin-right:10px;
    fill: currentColor;
 }
+   
 .contact-link {
    align-self: center;
 }
 .contact-link:hover .contact-icon {
-fill: var(--button-bg-color);
+   fill: var(--button-bg-color);
 }
 
 /* Hero */
@@ -218,11 +219,8 @@ fill: var(--button-bg-color);
 }
 .benefits {
    display: flex;
-   /* align-items: center; */
 }
-.benefit-item {
-   /* width: 270px; */
-}
+
 .benefit-item:nth-child(4n) {
    margin-right: 0;
 }
@@ -269,7 +267,8 @@ fill: var(--button-bg-color);
    width: calc((100% - 60px) / 3);
 }
 .work-img .item + .item {
-   margin-left: 30px;}
+   margin-left: 30px;
+}
 
 .work-title,
 .team-title {
@@ -335,7 +334,7 @@ fill: var(--button-bg-color);
 }
 
 .social-icon {
-   fill: currentColor;
+  fill: currentColor;
 }
 
 .social-icon + .social-icon {
