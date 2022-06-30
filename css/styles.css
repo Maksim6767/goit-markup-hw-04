@@ -72,6 +72,7 @@ p {
 
  .main {
    display: flex;
+   height: 80px;
    align-items: center;
    border-bottom: 1px solid #ececec;
  }
@@ -110,8 +111,6 @@ p {
  .site-nav .link:focus {
    color: var(--button-bg-color);
  }
-
- 
 .site-nav .link {
    display: block;
    padding-top: 32px;
