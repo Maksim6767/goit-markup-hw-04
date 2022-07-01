@@ -260,7 +260,7 @@ p {
 /* Section Work, Our team*/
 .work {
    padding-top: 47px;
-   padding-bottom: 47px;
+   padding-bottom: 94px;
 }
 .work-img {
    display: flex;
@@ -285,11 +285,12 @@ p {
 
 .team {
    background-color: var(--team-bg-color);
-   padding-top: 47px;
+   padding-top: 94px;
    padding-bottom: 94px;
 }
 .item-decor {
    padding-bottom: 30px;
+   background-color: var(--accent-text-color);
    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
                0px 1px 1px 0px rgba(0, 0, 0, 0.14),
                0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -527,10 +528,11 @@ p {
    margin-bottom: 50px;
    justify-content: center;
 }
-.item {
+.item-button {
    align-items: center;
+   background-color: var(--team-bg-color);  
 }
-.btn .item +.item {
+.item-button +.item-button {
    margin-left: 8px;
 }
 .btn .color {
@@ -550,6 +552,7 @@ p {
    font-weight: 500;
    line-height: 1.63;
    cursor: pointer;
+   border: none;
 }
 .btn .color:hover, 
 .btn .color:focus {
@@ -559,7 +562,7 @@ p {
 
 /* Cards */
 .cards {
-   background-color: var(--main-bg-color);
+   background-color: var(--accent-text-color);
 }
 .color:hover,
 .color:focus {
